@@ -1,4 +1,6 @@
 import "./globals.css";
+import Footercomp from "./ui/footercomp";
+import Headercomp from './ui/headercomp';
 
 
 export default function RootLayout({
@@ -8,7 +10,11 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <Headercomp />
+        {children}
+        <Footercomp />
+        </body>
     </html>
   );
 }
